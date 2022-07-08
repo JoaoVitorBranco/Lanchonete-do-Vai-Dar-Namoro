@@ -1,12 +1,14 @@
+import '../enum/paladar.dart';
+
 abstract class IComida {
   late String _nome;
   late int _serveQnts;
   late int _preco;
-  late String _paladar;
+  late Paladar _paladar;
 
   //construtor
   IComida(String this._nome, int this._serveQnts, int this._preco,
-      String this._paladar);
+      Paladar this._paladar);
 
   // nome
   String get nome {
@@ -42,12 +44,12 @@ abstract class IComida {
   }
 
   // paladar
-  String get paladar {
+  Paladar get paladar {
     return this._paladar;
   }
 
-  void set paladar(String paladarRecebido) {
-    if (paladarRecebido != null && paladarRecebido.isEmpty == false) {
+  void set paladar(Paladar paladarRecebido) {
+    if (paladarRecebido != null) {
       this._paladar = paladarRecebido;
     }
   }

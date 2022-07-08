@@ -1,3 +1,4 @@
+import '../../enum/paladar.dart';
 import '../IComida.dart';
 
 class MilkShake implements IComida {
@@ -6,20 +7,20 @@ class MilkShake implements IComida {
 
   // Override
   @override
-  String nome;
+  String _nome;
 
   @override
-  String paladar;
+  Paladar _paladar;
 
   @override
-  int preco;
+  int _preco;
 
   @override
-  int serveQnts;
+  int _serveQnts;
 
   // Construtor
-  MilkShake(String this._sabor, bool this._temCanudoPlastico, String this.nome,
-      String this.paladar, int this.preco, int this.serveQnts);
+  MilkShake(String this._sabor, bool this._temCanudoPlastico, String this._nome,
+      Paladar this._paladar, int this._preco, int this._serveQnts);
 
   // sabor
   String get sabor {
@@ -39,5 +40,47 @@ class MilkShake implements IComida {
 
   void set temCanudoPlastico(bool temCanudoPlasticoRecebido) {
     _temCanudoPlastico = temCanudoPlasticoRecebido;
+  }
+
+  // nome
+  String get nome {
+    return this._nome;
+  }
+
+  void set nome(String nomeRecebido) {
+    if (nomeRecebido.isEmpty == false) {
+      this._nome = nomeRecebido;
+    }
+  }
+
+  // serveQnts
+  int get serveQnts {
+    return this._serveQnts;
+  }
+
+  void set serveQnts(int serveQntsRecebido) {
+    if (serveQntsRecebido > 0) {
+      this._serveQnts = serveQntsRecebido;
+    }
+  }
+
+  // preco
+  int get preco {
+    return this._preco;
+  }
+
+  void set preco(int precoRecebido) {
+    if (precoRecebido > 0) {
+      this._preco = precoRecebido;
+    }
+  }
+
+  // paladar
+  Paladar get paladar {
+    return this._paladar;
+  }
+
+  void set paladar(Paladar paladarRecebido) {
+    this._paladar = paladarRecebido;
   }
 }
