@@ -1,1 +1,1 @@
-enum pontoDaCarne { BEMPASSADO, AOPONTO, MALPASSADO }
+enum PontoDaCarne { BEMPASSADO, AOPONTO, MALPASSADO }
