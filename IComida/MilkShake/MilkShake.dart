@@ -27,7 +27,7 @@ class MilkShake implements IComida {
   }
 
   void set sabor(String saborRecebido) {
-    if (saborRecebido != null && saborRecebido != "") {
+    if (saborRecebido != "") {
       this._sabor = saborRecebido;
     }
   }

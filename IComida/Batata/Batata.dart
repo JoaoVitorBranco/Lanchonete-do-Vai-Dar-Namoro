@@ -24,8 +24,7 @@ class Batata implements IComida {
   }
 
   void set acompanhamento(String acompanhamentoRecebido) {
-    if (acompanhamentoRecebido != null &&
-        acompanhamentoRecebido.isEmpty == false) {
+    if (acompanhamentoRecebido.isEmpty == false) {
       this._acompanhamento = acompanhamentoRecebido;
     }
   }
@@ -36,8 +35,6 @@ class Batata implements IComida {
   }
 
   void set temSal(bool temSalRecebido) {
-    if (temSalRecebido != null) {
-      this._temSal = temSalRecebido;
-    }
+    this._temSal = temSalRecebido;
   }
 }
