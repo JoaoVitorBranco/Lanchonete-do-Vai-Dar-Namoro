@@ -8,7 +8,7 @@ import 'Pessoa.dart';
 void main(List<String> args) {
   Pessoa teste = Pessoa("João Branco", 19, []);
   testeUnitario(teste.nome, "João Branco", "Criação de pessoa - Nome");
-  testeUnitario(teste.idade, 19, "Criação de pessoa - Idade");
+  testeUnitario(teste.idade, 18, "Criação de pessoa - Idade");
   testeUnitario(teste.temDiabetes, false, "Criação de pessoa - TemDiabetes");
   testeUnitario(teste.estomago.length, 0, "Criação de pessoa - Estomago");
 
