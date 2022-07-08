@@ -7,7 +7,7 @@ class Privada {
   // construtor
   Privada(List<IComida> dejetos) {
     this._dejetos = dejetos;
-    this._taEntupida = this._ehEntupida();
+    this.ehEntupida();
   }
 
   // dejetos
@@ -28,11 +28,11 @@ class Privada {
 
   // MÉTODOS
   // ehEntupida
-  bool _ehEntupida() {
+  void ehEntupida() {
     if (this._dejetos.length >= 5) {
-      return true;
+      this._taEntupida = true;
     } else {
-      return false;
+      this._taEntupida = false;
     }
   }
 

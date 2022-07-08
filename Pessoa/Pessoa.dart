@@ -1,4 +1,5 @@
 import '../IComida/IComida.dart';
+import '../Privada/Privada.dart';
 import '../Utils.dart';
 
 class Pessoa {
@@ -72,12 +73,18 @@ class Pessoa {
   }
 
   // cagar
+  void cagar(Privada privada) {
+    List<IComida> aux = [];
+    aux.addAll(this._estomago);
 
+    aux.forEach((element) {
+      if (!privada.taEntupida) {
+        privada.dejetos.add(element);
+        privada.ehEntupida();
+        this._estomago.remove(element);
+      }
+    });
+
+    this._temDiabetes = _ehDiabetico();
+  }
 }
-
-
-
-
-//funcoes
-//classes
-//na

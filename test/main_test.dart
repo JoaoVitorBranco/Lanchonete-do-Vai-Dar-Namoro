@@ -22,7 +22,7 @@ void main() {
 
     Privada privada1 = Privada([]);
     Privada privada2 = Privada([xburguer, xbacon, murango, chocolouco]);
-    expect(privada1.dejetos.length, privada2.dejetos.length);
+    expect(privada1.dejetos.length, 0);
   });
   test('Teste 2', () {});
 }
