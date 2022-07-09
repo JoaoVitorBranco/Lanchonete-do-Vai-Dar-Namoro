@@ -12,9 +12,7 @@ A história começa com o grande streamer Casimiro 🎮 se encontrando, no progr
 ## Diagrama de classes 🎬
 A imagem abaixo representa um Diagrama de Classes que criamos para organizar nosso pensamento na criação do código.
 
-![image](https://user-images.githubusercontent.com/85962841/178106432-73ab093c-a0b8-45c5-968b-17cad589f693.png)
-
-![Alt Text](https://media1.giphy.com/media/RtdRhc7TxBxB0YAsK6/giphy.gif)
+![image](https://user-images.githubusercontent.com/85962841/178109747-28e15d75-b89e-4feb-bbb9-c376baa2fa77.png)
 
 ## Agradecimentos especiais 👏
 Ronaldinho 🏈🧙‍♂️
@@ -23,5 +21,9 @@ Vilardi 🧱
 Casimiro ⚽
 
 
+
+
+
+![Alt Text](https://media1.giphy.com/media/RtdRhc7TxBxB0YAsK6/giphy.gif)
 
 
