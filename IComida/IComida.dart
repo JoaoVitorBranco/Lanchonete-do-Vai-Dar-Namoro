@@ -1,10 +1,29 @@
+import '../Utils.dart';
 import '../enum/paladar.dart';
 
 abstract class IComida {
+  /*
+  IComida: interface criada para modelar as comidas que foram criadas;
+  
+  ATRIBUTOS:
+  -String nome: nome dado no cardápio à comida;
+  -int serveQnts: número de pessoas recomendadas para comer a comida;
+  -int preco: preço em R$ da comida no cardápio
+  -Paladar paladar: ENUM criado para caracterizar o sabor que a comida exala nas papilas gustativas;
+  */
+
   late String _nome;
   late int _serveQnts;
   late int _preco;
   late Paladar _paladar;
+
+  // __str__
+  @override
+  String toString() {
+    return """${_nome}
+    (${Utils.capitalize(_paladar.toString().split('.').last)}, serve ${serveQnts})..................R\$ ${_preco},00
+    """;
+  }
 
   //construtor
   IComida(String this._nome, int this._serveQnts, int this._preco,

@@ -1,10 +1,34 @@
+import '../../Utils.dart';
 import '../../enum/paladar.dart';
 import '../../enum/pontoDaCarne.dart';
 import '../IComida.dart';
 
 class Hamburguer implements IComida {
+  /*
+  Hamburguer: tipo de comida que utiliza a interface IComida;
+
+  ATRIBUTOS:
+  -String nome: nome dado no cardápio à comida;
+  -int serveQnts: número de pessoas recomendadas para comer a comida;
+  -int preco: preço em R$ da comida no cardápio
+  -Paladar paladar: ENUM criado para caracterizar o sabor que a comida exala nas papilas gustativas;
+
+  ATRIBUTOS ESPECÍFICOS DE HAMBURGUER:
+  -PontoDaCarne pontoDaCarne: ENUM criado para determinar o ponto que está no cardápio do hambúrguer escolhido;
+  -String bebida: tipo de bebida que acompanha o hambúrguer (escolhido e predefinido no cardápio);
+  */
+
   PontoDaCarne _pontoDaCarne;
   String _bebida;
+
+  // __str__
+  @override
+  String toString() {
+    return """\u001b[1;32m${_nome}\u001b[0m
+    (${Utils.capitalize(_paladar.toString().split('.')[1])}, serve ${serveQnts} pessoa${serveQnts > 1 ? 's' : ''})..................R\$ ${_preco},00
+    Ponto da Carne: ${Utils.capitalizeCutENUM(_pontoDaCarne, "p")} Ponto
+    Acompanha ${_bebida}""";
+  }
 
   //override
   @override

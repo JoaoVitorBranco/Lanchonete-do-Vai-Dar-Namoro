@@ -1,6 +1,18 @@
 import '../IComida/IComida.dart';
 
 class Privada {
+  /*
+  Privada: classe que define uma privada (não confundir com "privado" de POO...);
+
+  ATRIBUTOS:
+  -List<IComida> dejetos: list de comidas que foram eliminadas, por uma pessoa, na privada instanciada;
+  -bool taEntupida: booleano que identifica se a privada está ou não entupida (não possui setter) ;
+
+  MÉTODOS:
+  -void ehEntupida(): função que, se identifica que a privada possui 5 dejetos, determina seu atributo "taEntupida" como true, caso contrário false;
+  -void descaga(): elimina todas as comidas dentro de "dejetos", desentupindo a descarga;
+  */
+
   late List<IComida> _dejetos;
   late bool _taEntupida;
 
