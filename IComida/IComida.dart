@@ -11,7 +11,7 @@ abstract class IComida {
   -int preco: preço em R$ da comida no cardápio
   -Paladar paladar: ENUM criado para caracterizar o sabor que a comida exala nas papilas gustativas;
   */
-  
+
   late String _nome;
   late int _serveQnts;
   late int _preco;
@@ -21,7 +21,7 @@ abstract class IComida {
   @override
   String toString() {
     return """${_nome}
-    (${Utils.capitalize(_paladar.toString().split('.').last)}, serve ${serveQnts})..................RS ${_preco},00
+    (${Utils.capitalize(_paladar.toString().split('.').last)}, serve ${serveQnts})..................R\$ ${_preco},00
     """;
   }
 
