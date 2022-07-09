@@ -11,6 +11,7 @@ abstract class IComida {
   -int preco: preço em R$ da comida no cardápio
   -Paladar paladar: ENUM criado para caracterizar o sabor que a comida exala nas papilas gustativas;
   */
+  
   late String _nome;
   late int _serveQnts;
   late int _preco;

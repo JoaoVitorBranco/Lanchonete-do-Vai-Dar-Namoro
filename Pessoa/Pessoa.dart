@@ -26,7 +26,7 @@ class Pessoa {
   // __str__
   @override
   String toString() {
-    return "$_nome, de $_idade anos.";
+    return "$_nome";
   }
 
   //construtor
