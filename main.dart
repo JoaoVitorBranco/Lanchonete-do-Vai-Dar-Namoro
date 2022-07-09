@@ -93,7 +93,7 @@ void main() {
 
   casal.forEach((pessoa) {
     print(
-        '''\u001b[1;33"m\tCampeão, desce ${pessoa.estomago.map((element) => element.nome).toList().join(", ")}", disse ${casimiro}''');
+        '''\u001b[1;33"m\t"Campeão, desce ${pessoa.estomago.map((element) => element.nome).toList().join(", ")}", disse ${casimiro}''');
   });
 
   print("");
@@ -109,10 +109,10 @@ void main() {
   print(
       "\u001b[1;31m❤ Após terminarem de comer, o garçom chegou e disse à eles:");
   casal.forEach((pessoa) {
-    print("\t${pessoa}, a sua parte ficou R\$ ${pessoa.conta},00");
+    print('\t"${pessoa}, a sua parte ficou R\$ ${pessoa.conta},00"');
   });
   print(
-      "O jantar foi muito bom, então eles decidiram ir para casa aproveitar um pouco mais rsrs");
+      "\u001b[1;31mO jantar foi muito bom, então eles decidiram ir para casa aproveitar um pouco mais rsrs");
   print(
       "\u001b[1;31mPorém quando chegaram lá, ${casimiro} e ${littleRonald} começaram a sentir algo borbulhando e precisaram correr para a única privada que tinha em seu apartamento, a do quarto.❤\n");
 
