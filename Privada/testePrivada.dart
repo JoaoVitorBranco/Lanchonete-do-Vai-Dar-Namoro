@@ -18,11 +18,13 @@ void main(List<String> args) {
   MilkShake chocolouco =
       MilkShake("Chocolate", false, "chocolouco", Paladar.DOCE, 30, 1);
 
-  Privada privada1 = Privada([]);
-  Privada privada2 = Privada([xburguer, xbacon, murango, chocolouco]);
+  Privada privada1 = Privada([xburguer]);
+  Privada privada2 =
+      Privada([xburguer, xbacon, murango, chocolouco, chocolouco]);
 
-  testeUnitario(privada1.dejetos.length, 0, "Ver se privada está vazia");
-  testeUnitario(privada2.dejetos.length, 4, "Ver se privada está vazia");
+  testeUnitario(privada1.dejetos.length, 1, "Ver se privada está vazia");
+  testeUnitario(privada2.dejetos.length, 5, "Ver se tem dejetos");
+  testeUnitario(privada2.taEntupida, true, "Ver se privada esta entupiada");
 
   privada2.descaga();
   testeUnitario(privada2.dejetos.length, 0, "Ver se após descarga, está vazia");

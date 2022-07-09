@@ -15,7 +15,7 @@ void main(List<String> args) {
   testeUnitario(teste.estomago.length, 0, "Criação de pessoa - Estomago");
   testeUnitario(teste.conta, 0, "Criação de pessoa - Conta");
 
-  // Teste comer + teste diabetes
+  // Teste do restaurante
   Hamburguer xburguer = Hamburguer("Suco de Laranja", PontoDaCarne.MALPASSADO,
       "XBurguer", Paladar.SALGADO, 20, 1);
 
@@ -28,7 +28,6 @@ void main(List<String> args) {
   MilkShake chocolouco =
       MilkShake("Chocolate", false, "chocolouco", Paladar.DOCE, 30, 1);
 
-  // Teste do restaurante
   teste.comer(xburguer);
   teste.comer(murango);
   teste.comer(xbacon);
