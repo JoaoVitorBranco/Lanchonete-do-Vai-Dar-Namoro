@@ -9,6 +9,9 @@ Eu e meu colega Vitor Soller 🤝🧑 estamos aprendendo Dart 🎯. Para tal, cr
 ## História 👨‍❤️‍👨
 A história começa com o grande streamer Casimiro 🎮 se encontrando, no programa de televisão 📺 Vai Dar Namoro 😍💞, com o diretor da entidade Dev Community Mauá 👾 (entidade na qual fazemos parte) Ronaldinha, mais conhecido como LittleRonald ou Hector Guerrini💻. Após entrarem no programa, se depararam com a Lanchonete 😋 do Vai Dar Namoro, uma lanchonete de Hambúrgueres 🍔👨‍❤️‍👨. Porém, não imaginavam que iriam pedir comida até demais... 💩
 
+![image](https://user-images.githubusercontent.com/81604963/178120539-2cf2072d-1008-4f1e-a99e-583ec892ebb9.png)
+
+
 ## Diagrama de classes 🎬
 A imagem abaixo representa um Diagrama de Classes que criamos para organizar nosso pensamento na criação do código.
 
@@ -22,8 +25,6 @@ Guerreiro ⚔
 Vilardi 🧱
 <br> 
 Casimiro ⚽
-
-
 
 
 
