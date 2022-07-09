@@ -14,11 +14,14 @@ A imagem abaixo representa um Diagrama de Classes que criamos para organizar nos
 
 ![image](https://user-images.githubusercontent.com/85962841/178106432-73ab093c-a0b8-45c5-968b-17cad589f693.png)
 
+![Alt Text](https://media1.giphy.com/media/RtdRhc7TxBxB0YAsK6/giphy.gif)
 
 ## Agradecimentos especiais 👏
-Ronaldinho 
-Guerreiro
-Vilardi
-Casimiro 
+Ronaldinho 🏈🧙‍♂️
+Guerreiro ⚔
+Vilardi 🧱
+Casimiro ⚽
+
+
 
 
