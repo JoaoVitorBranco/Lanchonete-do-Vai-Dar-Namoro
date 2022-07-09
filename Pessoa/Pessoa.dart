@@ -18,6 +18,7 @@ class Pessoa {
   -bool _ehDiabetico(): método privado utilizado em comer e cagar que identifica se a pessoa é diabética (possuindo ou não 3 ou mais comidas em seu estômago);
   -void cagar(Privada privada): transfere até um limite de 5 comidas de estômago para privada, verificando se ela ficou entupida e se o indivíduo perdeu ou não diabetes;
   -void adicionarNaConta(IComida comida): dentro de comer, adiciona o valor da respectiva comida na conta;
+  -void pagarConta(): zerar a conta do indivíduo, supondo que ele pagou;
   */
 
   late String _nome;

@@ -5,3 +5,5 @@ environment:
 
 dev_dependencies:  
   test: ^1.16.8
+
+#dart pub get -> comando para baixar os packages
