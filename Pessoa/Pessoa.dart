@@ -11,22 +11,26 @@ class Pessoa {
   -int idade: diferença do dia atual com a data de nascimento do indivíduo;
   -bool temDiabetes: booleano que identifica se a pessoa tem ou não diabetes (determinado se a pessoa possui 3 ou mais comidas em seu estômago) (não possui setter); 
   -List<IComida> estomago: simulação de estômago, pois é uma lista com as comidas que o indivíduo possui em seu estômago;
+  -int conta: valor inteiro que corresponde ao valor do indivíduo gasto no jantar;
 
   MÉTODOS:
   -void comer(IComida comida): coloca em seu estômago a comida que foi inserida como argumento da função;
   -bool _ehDiabetico(): método privado utilizado em comer e cagar que identifica se a pessoa é diabética (possuindo ou não 3 ou mais comidas em seu estômago);
   -void cagar(Privada privada): transfere até um limite de 5 comidas de estômago para privada, verificando se ela ficou entupida e se o indivíduo perdeu ou não diabetes;
+  -void adicionarNaConta(IComida comida): dentro de comer, adiciona o valor da respectiva comida na conta;
+  -void pagarConta(): zerar a conta do indivíduo, supondo que ele pagou;
   */
 
   late String _nome;
   late int _idade;
   late bool _temDiabetes;
   late List<IComida> _estomago;
+  int _conta = 0;
 
   // __str__
   @override
   String toString() {
-    return "$_nome, de $_idade anos.";
+    return "$_nome";
   }
 
   //construtor
@@ -35,6 +39,7 @@ class Pessoa {
     this._idade = _idade;
     this._estomago = _estomago;
     this._temDiabetes = this._ehDiabetico();
+    //this._conta = 0;
   }
 
   // nome
@@ -64,6 +69,11 @@ class Pessoa {
     return _temDiabetes;
   }
 
+  // conta
+  int get conta {
+    return _conta;
+  }
+
   // estomago
   List<IComida> get estomago {
     return this._estomago;
@@ -82,6 +92,7 @@ class Pessoa {
     if (this._ehDiabetico()) {
       this._temDiabetes = true;
     }
+    this.adicionarNaConta(comida);
   }
 
   // ehDiabetico
@@ -107,5 +118,15 @@ class Pessoa {
     });
 
     this._temDiabetes = _ehDiabetico();
+  }
+
+  //adicionarNaConta
+  void adicionarNaConta(IComida comida) {
+    this._conta += comida.preco;
+  }
+
+  // pagarConta
+  void pagarConta() {
+    this._conta = 0;
   }
 }

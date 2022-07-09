@@ -23,7 +23,7 @@ class MilkShake implements IComida {
   @override
   String toString() {
     return """\u001b[1;35m${_nome}\u001b[0m
-    (${Utils.capitalize(_paladar.toString().split('.')[1])}, serve ${serveQnts} pessoa${serveQnts > 1 ? 's' : ''})..................RS ${_preco},00
+    (${Utils.capitalize(_paladar.toString().split('.')[1])}, serve ${serveQnts} pessoa${serveQnts > 1 ? 's' : ''})..................R\$ ${_preco},00
     Sabor: ${_sabor} 
     ${_temCanudoPlastico ? "A" : "Não a"}companha canudo de plástico""";
   }
