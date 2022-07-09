@@ -22,7 +22,7 @@ void main(List<String> args) {
   Privada privada2 = Privada([xburguer, xbacon, murango, chocolouco]);
 
   testeUnitario(privada1.dejetos.length, 0, "Ver se privada está vazia");
-  testeUnitario(privada2.dejetos.length, 4, "Ver se privada está vazia");
+  testeUnitario(privada2.dejetos.length, 4, "Ver se tem dejetos");
 
   privada2.descaga();
   testeUnitario(privada2.dejetos.length, 0, "Ver se após descarga, está vazia");
