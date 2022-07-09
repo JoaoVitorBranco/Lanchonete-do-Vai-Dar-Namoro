@@ -1,4 +1,4 @@
-# Comer Aprendendo Dart -> Lanchonete do VAI DAR NAMORO!
+# Comer Aprendendo Dart → Lanchonete do VAI DAR NAMORO!
 
 Eu e meu colega Vitor Soller estamos aprendendo dart. Para tal, criamos este repositório, enquanto comparamos nossa resposta com o grande mestre Lucas Duez =)
 Com este projeto, estamos aprendendo, além de se adequar à linguagem Dart, POO; manipulação de diretórios, juntamente com sua organização; desenvolvimento de Testes Unitários (tanto com a criação de uma função simples criada por nós, como uma verificação melhorada indicada pelo diretor da entidade que fazemos parte: Dev Community Mauá, no Instituto Mauá de Tecnologia); criação e manipulação de Enums; utilização do GitHub e sua manipulação pelo terminal; metodologia de desenvolvimento de projetos; e bons hábitos de criação de códigos.
