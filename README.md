@@ -16,8 +16,11 @@ A imagem abaixo representa um Diagrama de Classes que criamos para organizar nos
 
 ## Agradecimentos especiais 👏
 Ronaldinho 🏈🧙‍♂️
+<br> 
 Guerreiro ⚔
+<br> 
 Vilardi 🧱
+<br> 
 Casimiro ⚽
 
 
