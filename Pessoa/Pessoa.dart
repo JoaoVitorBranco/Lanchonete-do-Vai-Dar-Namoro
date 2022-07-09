@@ -3,10 +3,31 @@ import '../Privada/Privada.dart';
 import '../Utils.dart';
 
 class Pessoa {
+  /*
+  Pessoa: classe que define uma pessoa;
+
+  ATRIBUTOS:
+  -String nome: nome da pessoa que está registrado no cartório especificamente (brinks);
+  -int idade: diferença do dia atual com a data de nascimento do indivíduo;
+  -bool temDiabetes: booleano que identifica se a pessoa tem ou não diabetes (determinado se a pessoa possui 3 ou mais comidas em seu estômago) (não possui setter); 
+  -List<IComida> estomago: simulação de estômago, pois é uma lista com as comidas que o indivíduo possui em seu estômago;
+
+  MÉTODOS:
+  -void comer(IComida comida): coloca em seu estômago a comida que foi inserida como argumento da função;
+  -bool _ehDiabetico(): método privado utilizado em comer e cagar que identifica se a pessoa é diabética (possuindo ou não 3 ou mais comidas em seu estômago);
+  -void cagar(Privada privada): transfere até um limite de 5 comidas de estômago para privada, verificando se ela ficou entupida e se o indivíduo perdeu ou não diabetes;
+  */
+
   late String _nome;
   late int _idade;
   late bool _temDiabetes;
   late List<IComida> _estomago;
+
+  // __str__
+  @override
+  String toString() {
+    return "$_nome, de $_idade anos.";
+  }
 
   //construtor
   Pessoa(String nomeInserido, int _idade, List<IComida> _estomago) {

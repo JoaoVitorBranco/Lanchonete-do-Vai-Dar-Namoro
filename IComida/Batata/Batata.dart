@@ -1,9 +1,32 @@
+import '../../Utils.dart';
 import '../../enum/paladar.dart';
 import '../IComida.dart';
 
 class Batata implements IComida {
+  /*
+  Batata: tipo de comida que utiliza a interface IComida;
+
+  ATRIBUTOS:
+  -String nome: nome dado no cardápio à comida;
+  -int serveQnts: número de pessoas recomendadas para comer a comida;
+  -int preco: preço em R$ da comida no cardápio
+  -Paladar paladar: ENUM criado para caracterizar o sabor que a comida exala nas papilas gustativas;
+
+  ATRIBUTOS ESPECÍFICOS DE BATATA:
+  -String acompanhamento: tipo de acompanhamento/molho que vem junto com a Batata;
+  -bool temSal: valor booleano para indicar se a batata vem salgada ou não (para os frescos...);
+  */
   String _acompanhamento;
   bool _temSal;
+
+  // __str__
+  @override
+  String toString() {
+    return """\u001b[1;36m${_nome}\u001b[0m
+    (${Utils.capitalize(_paladar.toString().split('.')[1])}, serve ${serveQnts} pessoa${serveQnts > 1 ? 's' : ''})..................RS ${_preco},00
+    Acompanha ${_acompanhamento}
+    ${_temSal ? "T" : "Não t"}em sal""";
+  }
 
   //override
   @override
