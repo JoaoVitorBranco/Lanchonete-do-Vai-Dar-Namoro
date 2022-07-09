@@ -5,5 +5,7 @@ Eu e meu colega Vitor Soller estamos aprendendo dart. Para tal, criamos este rep
 
 A história começa com o grande streamer Casimiro se encontrando, no programa de televisão Vai Dar Namoro, com o diretor da entidade Dev Community Mauá (entidade na qual fazemos parte) Ronaldinha, mais conhecido como LittleRonald ou Hector Guerrini. Após entrarem no programa, se depararam com a Lanchonete do Vai Dar Namoro, uma lanchonete de Hambúrgueres. Porém, não se depararam com o quanto de comida iriam comer...
 
+Adentamos ao fato de que neste projeto existe um pouco de humor, então desde já pedimos perdão à alguma brincadeira incômoda...
+
 ![image](https://user-images.githubusercontent.com/85962841/178106432-73ab093c-a0b8-45c5-968b-17cad589f693.png)
 
